@@ -1,0 +1,7 @@
+{
+  "name": "cat-rank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
