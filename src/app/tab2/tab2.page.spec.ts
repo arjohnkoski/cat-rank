@@ -20,8 +20,8 @@ describe('Tab2Page', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have `Cats` as the page title', () => {
+  it('should have `cats` as the page title', () => {
     const tabTwoTitle = tabTwoHeader.query(By.css('ion-title'));
-    expect(tabTwoTitle.nativeElement.innerText).toBe('Cats');
+    expect(tabTwoTitle.nativeElement.innerText).toBe('cats');
   });
 });

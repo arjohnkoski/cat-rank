@@ -30,8 +30,10 @@ describe('TabsPage', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have `Cats` as the tab 2 label', () => {
-    const tabTwoLabel = tabTwo.query(By.css('ion-label'));
-    expect(tabTwoLabel.nativeElement.innerText).toBe('Cats');
+  describe('Tab Two', () => {
+    it('should have `cats` as the label', () => {
+      const tabTwoLabel = tabTwo.query(By.css('ion-label'));
+      expect(tabTwoLabel.nativeElement.innerText).toBe('cats');
+    });
   });
 });
