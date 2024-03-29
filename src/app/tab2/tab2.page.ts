@@ -9,6 +9,7 @@ import { IonContent,
          IonIcon,
          IonTitle,
          IonToolbar } from '@ionic/angular/standalone';
+import { CameraService } from '../services/camera.service';
 
 @Component({
   selector: 'app-tab2',
@@ -27,7 +28,11 @@ import { IonContent,
 export class Tab2Page {
   public icons: any = { camera };
 
-  constructor() {
+  constructor(private cameraService: CameraService) {
     addIcons(this.icons);
+  }
+
+  takePhoto() {
+    this.cameraService.takePhoto();
   }
 }
